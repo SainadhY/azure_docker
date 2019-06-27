@@ -7,7 +7,7 @@ trigger:
 - master
 steps:
   - task: Docker@2
-  inputs:
-    command: 'buildAndPush'
-    Dockerfile: '**/Dockerfile'
-    azureSubscription: 'Docker'
+    inputs:
+     command: 'buildAndPush'
+     Dockerfile: '**/Dockerfile'
+     azureSubscription: 'Docker'
